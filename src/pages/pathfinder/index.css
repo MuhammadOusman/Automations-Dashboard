@@ -1,0 +1,100 @@
+/* Cleaned and migrated styles from App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+th, td {
+  padding: 16px 18px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  color: #222;
+  background-color: #fff;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
